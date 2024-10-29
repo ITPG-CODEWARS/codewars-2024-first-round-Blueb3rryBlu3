@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+KR:wght@200..900&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+KR:wght@200..900&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Comfortaa:wght@300..700&family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Gabriela&family=Markazi+Text:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif+KR:wght@200..900&family=Special+Elite&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style the header with a grey background and some padding */
+  .nav {
+    overflow: hidden;
+    background-color: #585454;
+    padding: 5px 5px;
+  }
+  
+  /* Style the header links */
+  .nav a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Monserrat", sans-serif;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  
+  /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+  .nav img{
+    width: 50px;
+    height: 50px; 
+    margin-top: -10px; 
+    margin-bottom: -15px; 
+    margin-left: -5px;
+  }
+  
+  
+  /* Float the link section to the right */
+  .nav-right {
+    float: right;
+  }
+  
+  /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+  @media screen and (max-width: 500px) {
+    .nav a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .nav-right {
+      float: none;
+    }
+  }
+  
+  
+  header {
+      background-image: url("viber_изображение_2024-10-25_10-58-18-250.png");
+    background-position: center top;
+    display:block;
+    margin: 0px auto; 
+      color: #ffffff;
+      padding: 250px;
+      text-align: center; 
+    height: 250%; 
+    width: 100%;
+    font-family: "Lobster";
+    font-size: 30px;  
+    background-repeat: no-repeat;
+    background-size: cover;
+  } 
+  
+  h1{
+    font-size: 100px; 
+    font-family: "Cinzel", serif; 
+  }
+
+  h2{
+    margin-left: 50px;
+  }
+ 
+  body { 
+    background: rgb(228, 205, 174);
+    font-family: Avenir, Arial, sans-serif; 
+  }
+  div#church-container {
+   background-color: #111;
+    width: 80%;
+    margin-left: 200px;
+    margin-right: 350px;
+    max-width: 1000px;
+  }
+  div#church-container input[type="radio"] { display: none; }
+  div#church-container label img { 
+   width: 20%;
+   display: block;
+   float: left;
+   clear: left;
+   border-right: 40px solid #111;
+  }
+  div#church-container label:hover { cursor: pointer; 
+  }
+  div#churches { 
+   width: 90%;
+   position: relative;
+   margin-left: 22.5%;
+  }
+  div#churches figure { 
+   margin: 0;
+   position: absolute;
+   height: 100%;
+   opacity: 0;
+   transform: scale(.8);
+   transition: .5s all linear;
+   width: 100%;
+  }
+  div#churches figure img { 
+   width: 100%;
+  }
+  div#churches figure figcaption { 
+   position: relative;
+   background: rgba(0,0,0,.6);
+   color: #fff;
+   font-size: 1rem;
+   padding: 1rem;
+   transition: 1s 1s all linear;
+   margin-top: 1.6rem;
+   line-height: 1.4;
+   text-align: left;
+  }
+  #vallbona:checked~#churches #monges,
+  #woodward:checked~#churches #presby,
+  #woodward2:checked~#churches #presby2 { 
+   opacity: 1;
+   transform: scale(1);
+  }
+  #vallbona:checked~#churches #monges figcaption, 
+  #woodward:checked~#churches #presby figcaption,
+  #woodward2:checked~#churches #presby2 figcaption { 
+    top: -5rem; 
+  }
+  
+  div#text {
+    margin-top: 475px;
+    margin-left: 150px;
+    margin-right: 150px;
+
+  }
+
+
+
+  .raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+button {  
+  color: var(--color);
+  transition: 0.25s;
+  color: #585454;
+  &:hover,
+  &:focus { 
+    border-color: var(--hover);
+    color: #634242;
+  }
+}
+
+button {
+  margin-left: 950px;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  padding: 1em 2em;
+}
+
+code { 
+  color: #e4cb58;
+  font: inherit;
+}
